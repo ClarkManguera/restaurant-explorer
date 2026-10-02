@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Restaurant Explorer</h1>
+
+    <p>
+        Explore restaurants from our MongoDB database.
+    </p>
+
+    <h2>Filters</h2>
+
+    <label for="borough">
+        Borough:
+    </label>
+
+    <select id="borough">
+        <option value="">All Boroughs</option>
+        <option value="Bronx">Bronx</option>
+        <option value="Brooklyn">Brooklyn</option>
+        <option value="Manhattan">Manhattan</option>
+        <option value="Queens">Queens</option>
+        <option value="Staten Island">Staten Island</option>
+    </select>
+
+    <br><br>
+
+    <label for="cuisine">
+        Cuisine:
+    </label>
+
+    <select id="cuisine">
+        <option value="">All Cuisines</option>
+        <option value="American ">American</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Bakery">Bakery</option>
+        <option value="Pizza">Pizza</option>
+        <option value="Hamburgers">Hamburgers</option>
+    </select>
+
+    <br><br>
+
+    <label for="grade">
+        Grade:
+    </label>
+
+    <select id="grade">
+        <option value="">All Grades</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+    </select>
+
+    <br><br>
+
+    <label for="maxScore">
+        Maximum Score:
+    </label>
+
+    <input
+        type="number"
+        id="maxScore"
+        placeholder="Example: 10"
+    >
+
+    <br><br>
+
+    <button onclick="loadRestaurants()">
+        Apply Filter
+    </button>
+
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
